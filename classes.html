@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=dir, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/testando.css">
+    <title>Document</title>
+    <script>
+        function show(){
+            var src = document.getElementById("src").value;
+            document.getElementById("resultado").srcdoc = src;
+        }
+    </script>
+</head>
+<body>
+    <div class="documento">
+        <textarea id="src" onkeyup="show()"></textarea>
+        <iframe id="resultado"></iframe>
+        
+    </div>
+</body>
+</html>

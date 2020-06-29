@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Funções.</h3>
+        <p>Funções são fragmentos de código que executam uma rotina que são chamadas pelo seu programa toda vez que você precisa</p>
+        <p>Vamos supor que você tenha um programa para controle de comércio e, neste programa você precisa verificar se os campos dos cadastro de funcionários, fornecedores, produtos e clientes estão sendo preenchidos. Sem uma função, voce teria que repetir a mesma validação para todos os campos em todos os formulários de cadastro, isso definitivamente daria muito trabalho pra fazer além de que toda vez que você precisar mudar alguma coisa nesta rotina voce teria que mudar em todos os lugares que você ela(a rotina).</p><br>
+        <p>As funções trouxeram a solução para esse problema. Com ela podemos escrever a rotina uma vez e usa-la sempre que for necessário.</p><br>
+        <p>Agora vamos supor que você precise um array em ordem </p>
+        <div class="exemplo">
+            <p class="blue"> var clientes = ["Zé", "João", "Maria", "Carlos", "Alberto", "Anderson", "Tatiana"]</p><br>
+            <p class="blue">function ordenar(lista){</p><br>
+            <p class="blue2">lista.sort();</p><br>
+            <p class="blue2">console.log(lista);</p><br>
+            <p class="blue">}</p><br>
+            <p class="blue">ordenar(clientes);</p><br>
+        </div>
+        <p class="resposta">["Alberto", "Anderson", "Carlos", "João", "Maria", "Tatiana", "Zé"]</p>
+        <p>Vamos entender o que estamos fazendo.</p>
+        <div class="dica">
+            <li class="green2">Primeiro criamos uma array com o nome de clientes.</li>
+            <li class="green2">Iniciamos nossa função, demos o nome dela de ordenar.</li>
+            <li class="green2">Informamos que ela iria receber uma lista como parametro ( que esta entre parenteses ).</li>
+            <li class="green2">abrimos o bloco de instruções usando a { .</li>
+            <li class="green2">Colocamos nosso array em orden usando o sort().</li>
+            <li class="green2">Mandamos mostrar o array ordenado no console.</li> 
+            <li class="green2">E finalmente fechamos o bloco de código usando }.</li>    
+        </div>
+        <p>Com essa função, podemos colocar qualquer array que ele vai ordenar.</p><br>
+        <div class="exemplo">
+           <p>var frutas = ["Cajú", "Maçã", "Uva", "Laranja", "Melancia"];</p><br>
+           <p>ordenar(frutas);</p><br>
+        </div>
+        <div class="resposta">
+            <p>["Cajú", "Laranja", "Maçã", "Melancia", "Uva"]</p>
+        </div>
+        <div class="exemplo">
+           <p>var compras = ["Macarrão", "Feijão", "Arroz", "Açucar", "Café", "Frango", "Carne", "Farinha", "Ovos", "Oleo"];</p><br>
+           <p>ordenar(compras);</p><br>
+        </div>
+        <p class="resposta">["Arroz", "Açucar", "Café", "Carne", "Farinha", "Feijão", "Frango", "Macarrão", "Oleo", "Ovos"]</p>
+        <div class="dica">
+            <p>Quando você usa uma função com parametros, oque você usa no lugar do parametro é substituido, no nosso caso nosso parametro tem o nome lista, quando chamamos a função usando um array com outro nome, internamente o nome lista é substituido pelo nome que usamos em toda função.</p><br>
+            <p>Então quando você ta usando a array com o nome fruta, no lugar de lista o interpretador vai ler o nome fruta, compras ou clientes( que foi o nome que você usou).</p>
+        </div>
+    </div>
+</body>
+</html>

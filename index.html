@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="photon/css/photon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/corpo.css">
+    <script src="jquery/dist/jquery.min.js"></script>
+    <title>The Coyote</title>
+</head>
+
+<body>
+    <!-- comecando fazendo o menu principal do nosso app -->
+    <div class="window">
+        <header class="toolbar toolbar-header">
+            <div class="toolbar-actions">
+              <div class="btn-group">
+                <button class="btn btn-default">
+                  <span class="icon icon-home"></span>
+                </button>
+                <button class="btn btn-default">
+                  <span class="icon icon-folder"></span>
+                </button>
+                <button class="btn btn-default active">
+                  <span class="icon icon-cloud"></span>
+                </button>
+                <button class="btn btn-default">
+                  <span class="icon icon-popup"></span>
+                </button>
+                <button class="btn btn-default">
+                  <span class="icon icon-shuffle"></span>
+                </button>
+              </div>
+
+              <button class="btn btn-default">
+                <span class="icon icon-home icon-text"></span>
+                Filters
+              </button>
+
+              <button class="btn btn-default btn-dropdown pull-right">
+                <span class="icon icon-megaphone"></span>
+              </button>
+            </div>
+        </header>
+
+        <div class="window-content">
+          <div class="pane-group">
+            <div class="pane-sm sidebar">
+                <div class="logo">
+                            
+                </div>
+                <nav class="nav-group">
+                    <h2 class="nav-group-title">Básico</h2>
+                    <span class="nav-group-item"><span class="icon icon-home"></span><a onClick="carregar('inicio.html')" href="#">Início</a></span>
+                    <span class="nav-group-item"><span class="icon icon-info"></span><a onClick="carregar('testeIntroducao.html')" href="#">Introdução</a></span>
+                    <span class="nav-group-item"><span class="icon icon-tag"></span><a onClick="carregar('variaveis.html')" href="#">Variáveis</a></span>
+                    <span class="nav-group-item"><span class="icon icon-plus"></span><a onClick="carregar('operadores.html')" href="#">Operadores</a></span>
+                    <span class="nav-group-item"><span class="icon icon-archive"></span><a onclick="carregar('arrays.html')" href="#">Arrays</a></span>
+                    <span class="nav-group-item"><span class="icon icon-address"></span><a onclick="carregar('ifelse.html')" href="#">If else</a></span>
+                    <span class="nav-group-item"><span class="icon icon-arrows-ccw"></span><a onclick="carregar('for.html')" href="#">Loop For</a></span>
+                    <span class="nav-group-item"><span class="icon icon-bookmarks"></span><a onclick="carregar('funcoes.html')" href="#">Funções</a>  </span> 
+                    <span class="nav-group-item"><span class="icon icon-basket"></span><a href="">Objetos</a></span>
+                    <span class="nav-group-item"><span class="icon icon-brush"></span><a href="">Strings</a></span>
+                    <span class="nav-group-item"><span class="icon icon-calendar"></span><a href="">Datas</a></span>
+                    <span class="nav-group-item"><span class="icon icon-suitcase"></span><a href="">Switch-Case</a></span>
+                    <span class="nav-group-item"><span class="icon icon-loop"></span><a onclick="carregar('testeParalax.html')" href="#">Loop While</a></span>
+                    <span class="nav-group-item"><span class="icon icon-feather"></span><a onclick="carregar('classes.html')" href="#">Classes</a>  </span>               
+                </nav>
+                <nav class="nav-group">
+                    <h4 class="nav-group-title">Intermediário</h4>
+                </nav>
+            </div>
+            <div class="pane" id="conteudo">
+                
+            </div>
+          </div>
+        </div>
+
+        <footer class="toolbar toolbar-footer">
+          <h1 class="title">theCoyote Corporation &copy;2020 </h1>
+        </footer>
+      </div>
+
+    <script>
+        // adiciona uma parte de codigo ou script na pagina
+        function carregar(pagina) {
+            $("#conteudo").load(pagina);
+        }
+
+        // pega a posicao do mouse
+        function pegaPosicao(documento){
+          var reporter = document.getElementById(documento);
+          window.addEventListener('mousemove', function(e) {
+            var mouse = {
+              page: {
+                x: e.pageX,
+                y: e.pageY
+              },
+              client: {
+                x: e.clientX,
+                y: e.clientY
+              }
+            };
+            documento.innerHTML = ['page', 'client'].map(function(type) {
+              return [type, ,'x:', mouse[type].x, 'y:', mouse[type].y, '\n'].join(' ');
+              }).join(' | ');
+          });
+        }
+
+        function posicaoScroll(objetoScroll) {
+
+        }
+
+    </script>
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

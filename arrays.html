@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Array</h3>
+        <p>Array são objetos que podem armazenar vários valores.</p>
+        <p>Imagine que você precise criar 10 variáveis com os nomes dos produtos que você precisa trazer do mercado.</p>
+        <div class="exemplo">
+            <p>var produto1 = "Macarrão";</p><br>
+            <p>var produto2 = "Feijão";</p><br>
+            <p>var produto3 = "Arroz";</p><br>
+            <p>var produto4 = "Açucar";</p><br>
+            <p>var produto5 = "Café";</p><br>
+            <p>var produto6 = "Frango";</p><br>
+            <p>var produto7 = "Carne";</p><br>
+            <p>var produto8 = "Farinha";</p><br>
+            <p>var produto9 = "Ovos";</p><br>
+            <p>var produto10 = "Oleo";</p><br>
+        </div>
+        <p>Com o array, você pode fazer a mesma coisa com menos escrita.</p>
+        <p>Para declarar um array voce precisa usar a declaração var + nome do array + sinal de igualdade ( = ) + abrir e fechar colchetes ( [] ). </p>
+        <p class="exemplo">var produto = ["Macarrão", "Feijão", "Arroz", "Açucar", "Café", "Frango", "Carne", "Farinha", "Ovos", "Oleo"];</p>
+        <p>Arrays são objetos semelhantes a listas que vêm com uma série de  métodos embutidos para realizar operações de travessia e mutação. Nem
+            o tamanho de um array JavaScript nem os tipos de elementos são fixos. Já que  o tamanho de um array pode ser alterado a qualquer momento
+            e os dados podem ser armazenados em posições não contíguas, arrays JavaScript não tem a garantia de serem densos; isso depende de como o
+            programador escolhe usá-los. De uma maneira geral, essas são características convenientes, mas, se esses recursos não são desejáveis para
+            o seu caso em particular, você pode considerar usar arrays tipados.</p>
+        <p style="font-size: 10px; text-align: left;"><p style="font-size: 10px; text-align: left;">https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array#Sum%C3%A1rio (30/05/2020)</p><br>
+        <p>Acima coloquei o que diz o Manual da Mozilla sobre oque é um array mas MEU CONCEITO é que o array é uma variável que pode ter vários valores.</p><br>
+        <p>Um array pode ser criado vazio ou já com valores declarados.</p>
+        <div class="exemplo">
+            <p>var minhaConta = [];</p><br>
+            <p>var contasApagar = ["Água", "Luz", "Internete", "Aluguel", "Comida"];</p><br>
+        </div>
+        <div class="atencao">
+            <li>Um array conta cada item declarada nela como Índice.</li>
+            <li>Os índices comessam com zero (0).</li>
+            <li>Os arrays não tem tamanhos ou tipos fixos.</li>
+            <li>Você pode usar o valor total do array ou um item de cada vez usando a posição que você quer usar entre colchetes [].</li>
+        </div>
+        <div class="exemplo">
+            <p>var contasApagar = ["Água", "Luz", "Internete", "Aluguel", "Comida"];</p><br>
+            <p>console.log(contasApagar);</p><br>            
+        </div>
+        <p><b>O que fizemos?</b></p><br>
+        <p>Declaramos um array chamado contasApagar e definimos 5 valores à ela ["Água", "Luz", "Internete", "Aluguel", "Comida"] e mandamos mostrar no console.</p><br>
+        <p>Podemos também usar apenas um valor do array, para isso digitamos o nome do array seguido da posição entre colchetes.</p><br>
+        <div class="exemplo">
+            <p>console.log(contasApagar[0]);</p><br>
+            <p>console.log(contasApagar[2]);</p><br>
+            <p>console.log(contasApagar[4]);</p><br>
+        </div>
+        <div class="resposta">
+            <p>Água</p><br>
+            <p>Internete</p><br>
+            <p>Comida</p><br>
+        </div>
+        <div class="dica">
+            <p>Lembre-se que os índices começam com 0.</p>
+            <p>No caso da array contasApagar que contém 5 elementos, o índice vai do zero(0) até 4.</p>
+        </div>
+        <h5>Criando um array</h5>
+        <div class="exemplo">
+            <p>var frutas = ["Cajú", "Maçã", "Uva", "Laranja", "Melancia"];</p><br>
+            <p>console.log(frutas);</p>
+        </div>
+        <div class="resposta">
+            <p>["Cajú", "Maçã", "Uva", "Laranja", "Melancia"]</p>
+        </div>
+        <h5>Verificando o tamanho de um array.</h5>
+        <p>Para verificar o tamanho de um array usamos o .length</p><br>
+        <div class="exemplo">
+            <p>var meuArray = ["Cajú", "Maçã", "Uva", "Laranja", "Melancia"];</p><br>
+            <p>console.log(meuArray.length);</p><br>
+        </div>
+        <p class="resposta">5   <span class="blue3"> // retorno da quantidade de elementos do array.</span></p>
+        <p>Sua sintaxe é nomeDoArray.length</p>
+        <h5>Ordenar um array.</h5>
+        <p>Você pode colocar um array em ordem usando o .sort().</p><br>
+        <p>Sua sintaxe é nomeDoArray.sort().</p>
+        <div class="exemplo">
+            <p>var meuArray = ["Cajú", "Maçã", "Uva", "Laranja", "Melancia"];</p><br>
+            <p>console.log(meuArray);<span class="blue3">// mostrando o array no console </span></p><br>
+            <p>meuArray.sort();</p><br>
+            <p>console.log(meuArray) <span class="blue3">// mostrando o array no console -> agora ordenado.</span></p><br>
+        </div>
+        <p class="resposta">["Cajú", "Laranja", "Maçã", "Melancia", "Uva"]</p><br>
+        <h5>Acessando um item pelo index do array.</h5>
+        <p>Vamos usar o exemplo do array descrito acima.</p><br>
+        <p class="exemplo">console.log(frutas[2]);</p><br>
+        <p class="resposta">Maçã</p><br>
+        <p>Oque fizemos?</p><br>
+        <p>Pedimos que imprimisse o primeiro elemento do array na tela, no caso o de index=0</p>
+        <div class="dica">
+            <p>Você sabia?</p>
+            <p>Apesar de escrever-mos os índices dos arrays com números eles são na verdade strings. O que acontece é que o Java Script faz o casting(transforma para string) de forma automática, facilitando a vida do programador.</p>
+            <p>Qunado você escreve console.log(frutas[2]); o JS. ta mandando para o interpretador console.log["2"]);</p>
+        </div>
+        <h5>Adicionando um novo item no final do array.</h5>
+        <p>Você pode adicionar um item no final do array usando o <b>.push</b>.</p><br>
+        <p>Sua sintaxe é nomeDoArray.push(Aquí dentro vai oque você quer incluir no array.);</p>
+        <div class="exemplo">
+            <p>var meuArray = ["Fiat", "Omega", "Gol", "Corsa"];</p><br>
+            <p>meuArray.push("Mercedes");</p><br>
+            <p>console.log(meuArray);</p><br>
+        </div>
+        <p class="resposta">["Fiat", "Omega", "Gol", "Corsa", <b>"Mercedes"</b>]</p><br>
+        <div class="dica">
+            <p>Você deve sempre incluir o novo item entre os parênteses do push -> meuArray.push("Fusca");. Usando o exemplo do array acima, o meuArray ficaria assim -> ["Fiat", "Omega", "Gol", "Corsa", "Mercedes", "Fusca"]</p><br>
+            <p>O push aceita calculos e concatenação de string. -> meuArray.push(5*3); meuArray.push("Carro"+" "+"de"+ " " + "Mão");</p><br>
+            <p>["Fiat", "Omega", "Gol", "Corsa", "Mercedes", 15, "Carro de Mão"]</p><br>
+        </div>
+        <h5>Remover um item do final do array.</h5>
+        <p>Para remover o ultimo elemento de um array use o .pop. Sua sintaxe é nomeDoArray.pop().</p><br>
+        <p>Usando o array do nosso ultimo exemplo.</p><br>
+        <div class="exemplo">
+            <p>var meuArray = ["Fiat", "Omega", "Gol", "Corsa", "Mercedes", 15, "Carro de Mão"]</p><br>
+            <p>meuArray.pop</p><br>
+            <p>console.log(meuArray);</p><br>
+        </div>
+        <p class="resposta">["Fiat", "Omega", "Gol", "Corsa", "Mercedes", 15]</p><br>
+        <h5>Removendo um intem do início do array.</h5>
+        <p>Use o .shift() para remover um item no início do array.</p><br>
+        <p>Sua sintaxe é nomeDoArray.shift();</p><br>
+        <div class="exemplo">
+            <p>var meuArray = ["Fiat", "Omega", "Gol", "Corsa", "Mercedes", 15];</p><br>
+            <p>meuArray.shift();</p><br>
+            <p>console.log(meuArray);</p><br>
+        </div>
+        <p class="resposta">["Omega", "Gol", "Corsa", "Mercedes", 15]</p><br>
+        <h5>Adicionando um item no início do array.</h5>
+        <p>Use o .unshift para adicionar um item no início do array.</p><br>
+        <p>Sua sintaxe é nomeDoArray.unshift(item a ser adicionado.</p><br>
+        <div class="exemplo">
+            <p>var meuArray = ["Omega", "Gol", "Corsa", "Mercedes", 15]</p><br>
+            <p>meuArray.unshift("Montana");</p><br>
+            <p>console.log(meuArray);</p><br>
+        </div>
+        <p class="resposta">["Montana", "Omega", "Gol", "Corsa", "Mercedes", 15]</p><br>
+        <h5>Procurar o índice pelo item do array.</h5>
+        <p>Para procurar o índece pelo item do array use o .indexOf.</p><br>
+        <p>Sua sintaxe é nomeDoArray.indexOf(nome do item a ser procurado);</p><br>
+        <div class="exemplo">
+            <p>var meuArray = ["Montana", "Omega", "Gol", "Corsa", "Mercedes", 15];</p><br>
+            <p>meuArray.indexOf("Gol");</p><br>
+        </div>
+        <p class="resposta">2</p>
+        <div class="dica">
+            <p>Você pode atribuir o retorno de uma operação a uma variável para que você possa usar ela em uma outra operação.</p><br>
+            <p>var meuArray = var meuArray = ["Montana", "Omega", "Gol", "Corsa", "Mercedes", 15];</p><br>
+            <p>var resposta = meuArray.indexOf("Gol");</p><br>
+            <p> console.log(resposta);</p><br>
+            <p>O resultado desta operação será -> 2</p><br>
+        </div>
+        <h5>Remover um ou mais itens pela posição do índece.</h5>
+        <p>Você pode apagar um ou mais itens de um array usando um índice.</p><br>
+        <p>Sua sintaxe é nomeDoArray.splice(posiçãoInicial, quantidadeDeItens).</p><br>
+        <div class="exemplo">
+            <p>var meuArray = ["Montana", "Omega", "Gol", "Corsa", "Mercedes", 15];</p><br>
+            <p>meuArray.splice(2, 3);</p><br>
+            <p>console.log(meuArray);</p><br>
+        </div>
+        <p class="resposta">["Montana", "Omega", 15]</p>
+        <div class="atencao">
+            <p>O splice vai apagar os 3 itens do array começando com a posição inicial.</p>
+        </div>
+        <h5>Copiar um array.</h5>
+        <p>Para você copiar um array use .slice().</p><br>
+        <p>Sua sintaxe é var nomeDaCopia = nomeDoArray.slice();</p>
+        <div class="exemplo">
+            <p>var meuArray = ["Montana", "Omega", "Gol", "Corsa", "Mercedes", 15];</p><br>
+            <p>var copiaMeuArray = meuArray.slice();</p><br>
+            <p>console.log(copiaMeuArray);</p>
+        </div>
+        <p class="resposta">["Montana", "Omega", "Gol", "Corsa", "Mercedes", 15]</p><br>
+
+        <p>Aquí terminamos a primeira parte de arrays. Mais pra frente tem mais!!!!</p><br><br><br>
+
+    </div>
+</body>
+</html>

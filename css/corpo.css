@@ -1,0 +1,46 @@
+.texto{
+    margin: 0;
+    padding: 0;
+    width: 65%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: rgb(157, 221, 205);
+    float: left;
+    perspective: 1px;
+
+}
+
+.view{
+    margin: 0;
+    padding: 0;
+    width: 35%;
+    height: 100%;
+    border: 1px solid grey;
+    background-color: rgb(69, 160, 155);
+    float: right;
+    position: static left;
+}
+
+.fundo{
+    background-image: url(../img/fundoParalax.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.61);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 16px;
+}
+
+.top{
+    background-image: url(../img/fundoParalax2.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.582);
+    font-size: 16px;
+    perspective: 2px;
+}

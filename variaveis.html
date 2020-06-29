@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+</head>
+<body>
+    <h3>Oque são variáveis?</h3>
+
+    <p>Na programação, uma variável é um objeto (uma posição, frequentemente localizada na memória) capaz de 
+        reter e representar um valor ou expressão. Enquanto as variáveis só "existem" em tempo de execução, 
+        elas são associadas a "nomes", chamados identificadores, durante o tempo de desenvolvimento.</p>
+    <P>Quando nos referimos à variável, do ponto de vista da programação, estamos tratando de uma “região de
+         memória (do computador) previamente identificada cuja finalidade é armazenar os dados ou informações
+          de um programa por um determinado espaço de tempo”. A memória do computador se organiza tal qual um
+           armário com várias divisões. Sendo cada divisão identificada por um endereço diferente em uma 
+           linguagem que o computador entende.</P>
+    <P>O computador armazena os dados nessas divisões, sendo que em cada divisão só é possível armazenar um 
+        dado de cada vez. Ele identifica cada divisão por intermédio de um endereço no formato hexadecimal,
+         e as linguagens de programação permitem nomear cada endereço ou posição de memória, facilitando a
+          referência a um endereço de memória. Uma variável é composta por dois elementos básicos: O
+         identificador; é um nome dado à variável para possibilitar sua utilização e o conteúdo (que podem
+          conter valores de tipo diferentes, vamos abordar os tipo de conteúdo um pouco mais pra frente nesta sessão). 
+          "Em Java Script o tipo da variavel é definida dependendo do valor atribuido a ela."</P>
+          <h3>Ativando o Console.</h3>
+        <p>Antes de iniciar-mos, precisamos abrir a ferramenta que vai nos ajudar a testar os exemplos deste app.</p>
+        <h5><span class="green1"> Use as teclas Ctrl + Shift + i para ativar as ferramentas do desenvolvedor.</span></h5>
+        <p>Na parte superior direita, você vai encontrar a opção 'Console' e click nela, depois use o cursor do mouse 
+            na borda da divisão da caixa de ferramentas do desenvolvedor para ajustar ela de forma que voce tenha todas
+            as opções do menu, texto e console na mesma tela sem uma sobrepor a outra.</p>
+        <div class="imagen">
+        </div> 
+        <span class="blue3">A figura acima mostra como sua tela deve ficar.</span><br>
+        <p>Se a sua tela esta deste jeito; já estamos prontos para começar!!!</p>
+        <p>Para todos os exemplos usaremos as seguintes cores.</p>
+        <p class="exemplo">Exemplo.</p>
+        <p class="resposta">Resultado esperado.</p>
+        <h3>Declarando variáveis</h3>
+        <p>Você pode declarar uma variável de três formas:</p>
+        <li>Com a palavra chave var. Por exemplo, var x = 42. Esta sintaxe pode ser usada para declarar tanto variáveis locais como variáveis globais.</li>
+        <li>Por simples adição de valor. Por exemplo, x = 42. Isso declara uma variável global. Essa declaração gera um aviso de advertência no JavaScript. Você não deve usar essa variante.</li>
+        <li>Com a palavra chave let. Por exemplo, let x = 42. Essa sintaxe pode ser usada para declarar uma variável local de escopo de bloco.</li>
+        <br>
+        <h5>faça você...</h5>
+        <p>Use o console ao lado e declares uma variável <b>nome</b> e atribua a ela o seu nome e depois tecle &lt;ENTER&gt;</p>
+        <p class="exemplo">var nome = "TheCoyote";</p>
+        <p>Agora se digitar-mos no console <b>nome</b>, ele vai mostrar o resultado do que esta armazenado na variável.</p><br>
+        <p class="exemplo">nome;</p>
+        <p class="resposta">TheCoyote</p>
+        <p>Oque fizemos?</p>
+        <li>Primeiro declaramos que queremos criar uma variável.( var )</li>
+        <li>Definimos um nome para o endereço de memória.( nome )</li>
+        <li>Usamos o sinal de igualdade para atribuir um valor.( = ) </li>
+        <li>Informamos o valor que queríamos atribuir a variável nome.( "TheCoyote" )</li>
+        <li>E finalmente finalizamos a declaração.( ; )</li>
+        <p>Confirme que voce acabou de escrever suas instruções teclando &lt;ENTER&gt; </p>
+        <p>Na medida que vamos avançando, vou mostrando alguns comandos que iremos usar durante toda essa viagem de aprendizado.</p><br>
+        <p><b>console.log</b> -> Usado para mostrar o resultado de uma expressão no console.</p>
+        <p class="exemplo">console.log(nome);</p>
+        <p class="resposta">TheCoyote</p>
+        <p>Uma variável declarada usando a declaração var ou let sem especificar o valor inicial tem o valor <i>undefined</i>.</p>
+        <p>Isso é possível e na verdade bastante usada quando pricisamos atribuir o valor de uma função com base no resultado de uma expressão.</p>
+        <p>Uma tentativa de acessar uma veriável não declarada resultará no lançamento de uma execeção <i>ReferenceError.</i></p>    
+        <h3> Considerações:</h3>
+        <p>Precisamos esclarecer alguns prontos:</p><br>
+        <li>Toda vez que precisarmos definir uma variável como texto precisamos coloca-las entre aspas(simpres ou duplas).</li>
+        <li>Quando declararmos um numero, não usaremos aspas.</li> 
+        <li>Não precisamos declarar um valor quando declaramos uma variável.</li>
+        <li>Se colocar-mos uma variável entre aspas ela será considerada um texto (String)</li>
+        <h5>Vamos testar alguns exemplos:</h5>
+        <p>Usando variáveis com números.</p>
+        <div class="exemplo">
+            <p>var precoUva = 10</p>;<br>
+            <p>var quantidade = 5</p>;<br>
+            <p>var resultado = precoUva * quantidade;</p><br>
+            <p>console.log(resultado);</p><br>
+        </div>
+        <p class="resposta">50</p>
+        <p>Trabalando com textos (String)</p><br><br>
+
+        <div class="exemplo">
+            <p>var nome = "The";</p><br>
+            <p>var sobreNome = "Coyote"</p><br>
+            <p>console.log(nome + sobreNome);</p>
+        </div>    
+        <p class="resposta">TheCoyote</p><br><br>
+        <p>Podemos acrescentar textos e juntar ele com nossas variáveis ou juntar duas ou mais variáveis(essa junção chama-se CONCATENAR).</p>
+        <div class="exemplo">
+            <p>var resposta = "TheCoyote.";</p><br>
+            <p>var pergunta1 = "Qual o seu nome?";</p><br>
+            <p>var pergunta2 = "Quanto custa?";</p><br>
+            <p>console.log(pergunta1 + " - " + resposta);</p><br>
+            <p>console.log(pergunta2 + " - " + "R$ 10,00");</p><br>
+            <p>console.log("Quem é aquele bonitão?" + " - " + resposta);</p><br>
+        </div>
+        <div class="resposta">
+            <p>Qual o seu nome? - TheCoyote.</p><br>
+            <p>Quanto custa? - R$ 10,00</p><br>
+            <p>Quem é aquele bonitão? - TheCoyote.</p><br>
+        </div> <br><br>
+        <p>Além dos tipo texto(que de agora em diante chamaremos de String), undefined, null, Symbol, Object e Numéricos, temos um outro tipo de dados que usaremos nos proximos capítulos, que é o boolean, esse vai retornar o valor lógico true ou false (verdadeiro ou falso). </p><br><br><br>
+
+
+</body>
+</html>

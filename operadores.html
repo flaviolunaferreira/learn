@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <h3>Operadores.</h3>
+    <p>Agora vamos ver quais os operadores que o Java Script suporta, e, para melhor fixação, escreveremos exemplos para que você possa praticar.</p>
+    <p>Você pode usar os operadores de muitas formas, mas aqui vou usar variáveis para exemplificar, na medida que avançar-mos montaremos outras situações de como usar.</p>
+    
+    <div class="dica">
+        <p>Eventualmente vou incluir novas informações ao nosso estudo.</p><br>
+        <p><b>Comentários:</b></p><br>
+        <p>Os Comentários são uma forma de você colocar um texto em seu código para lembrar ou infomar para outros programadores o que você ta fazendo:</p><br>
+        <p>Isso é muito útil, principalmente quando você pega um progama que não mexe ha muito tempo, os comentáios vão te ajudar a lembrar o que você fez.</p><br>
+        <p> // Esse é um comentário de uma linha</p><br>
+        <p> &lt;!-- Esse é um comentário de muitas linhas, você pode digitar muita coisa que ele não vai compilar junto com seu código, já tô ficando sem assunto para demonstrar esse exemplo --&gt; </p>
+        <p>Em programas muito grandes comentários são muito importantes para a legibilidade do código.</p>
+    </div><br>
+    <h5>Operadores de Atribuição.</h5>
+    <p>O sinal de igualdade ( = ); serve para atribuir valores a variável.</p>
+    <div class="exemplo">
+        <p>var idade = 142;</p><br>
+        <p>console.log("Sua idade é " + idade + " anos.");</p>
+    </div>
+    <p class="resposta">Sua idade é 142 anos.</p>
+    <p>Atribuimos um valor a variavel idade mas podemos usar qualquer tipo de dado para fazer a atribuição com o sinal de ( = ).</p>
+    <div class="exemplo">
+        <p>var nome = "theCoyote";</p><br>
+        <p>var ativo = true;</p><br>
+        <p>var altura = 1.86;</p><br>
+        console.log("Boa noite " + nome + ", você tem " + altura + " de altura e sua situação esta ativa = " + ativo);
+    </div>
+    <p class="resposta">Boa noite theCoyote, você tem 1.86 de altura e sua situação esta ativa = true</p><br>
+    <h5>Atribuição de Adição.</h5>
+    <div class="dica">
+        <p>Os sinais de Adição( + ), Subtração( - ), Multiplicação( * ), Divisão( / ), Módulo( % ) e Exponenciação( ** ) funcionam da mesma forma que você ta acostumado a fazer na mátematica com exceção do operador Módulo.</p>
+        <p>O operdor módulo também é conhecido como resto da divisão.</p>
+        <p>O sinal de + é usado para juntar(concatenar) duas ou mais String's.</p>
+    </div>
+    <p>O conjunto de sinais mais o operador igual( = ) informam que voce quer somar o valor da variável e salvar nela mesma com o resultado obtido.</p>
+    <div class="exemplo">
+        <p>var valor = 10;</p><br>
+        <p>valor += 2;</p><br>
+        console.log(valor);<br>
+    </div>
+    <p class="resposta">12 &nbsp;&nbsp;&nbsp;&nbsp; // a variável valor valia 10 e acrescentou ela + 2 e salvou nela mesma, isso sera a mesma coisa de você digitar -> valor = valor + 2 ;</p>
+    <h5>Subtração, Multiplicação e Divisão.</h5>
+    <p>Semelhante ao operador de adição, esses três operadores tem a mesma sintaxe.</p>
+    <div class="exemplo">
+        <p>var saldo = 500;</p><br>
+        <p>var aluguel = 100;</p><br>
+        <p>var ajuda = 5</p><br>
+        <p>var familia =4</p><br>
+        <p>// defini minhas variáveis, agora vou controlar o fluxo de valores em minha carteira.</p><br>
+        <p>console.log("O saldo atual é -> " + saldo);</p><br>
+        <p>saldo -= aluguel;</p><br>
+        <p>console.log("O saldo atual é -> " + saldo);</p><br>
+        <p>saldo *= ajuda;</p><br>
+        <p>console.log("O saldo atual é -> " + saldo);</p><br>
+        <p>saldo /= familia;</p><br>
+        <p>console.log("O saldo atual é -> " + saldo);</p><br>
+    </div>
+    <div class="resposta">
+        <p>O Saldo atual é -> 500</p><br>
+        <p>O Saldo atual é -> 400</p><br>
+        <p>O Saldo atual é -> 2000</p><br>
+        <p>O Saldo atual é -> 500</p><br>   
+    </div>
+    <p>Esse exemplo parece vida de rico, o cara recebe o salário, paga as contas, por algum milagre do ceu tem uma ajuda, divide o lucro com a família e mesmo assim ainda fica com o mesmo valor de quando começou.</p><br><br>
+    <h5>Resto da divisão (Modulo %).</h5>
+    <p>Para quem nunca estudou programação esse operador parece bem estranho, por isso vou dedicar um tópico só para ele</p>
+    <p>Como o nome sugere, esse operador retorna o que sobrou sa divisão </p>
+    <p>Usando o mesmo exemplo agora com a vida de um probre com a mesma sorte.</p>
+    <div class="exemplo">
+        <p>var saldo = 500;</p><br>
+        <p>var aluguel = 100;</p><br>
+        <p>var ajuda = 5</p><br>
+        <p>var familia =4</p><br>
+        <p>// defini minhas variáveis, agora vou controlar o fluxo de valores em minha carteira.</p><br>
+        <p>console.log("O saldo atual é -> " + saldo);</p><br>
+        <p>saldo -= aluguel;</p><br>
+        <p>console.log("O saldo atual é -> " + saldo);</p><br>
+        <p>saldo *= ajuda;</p><br>
+        <p>console.log("O saldo atual é -> " + saldo);</p><br>
+        <p>saldo %= familia;</p><br>
+        <p>console.log("O saldo atual é -> " + saldo);</p><br>
+    </div>
+    <div class="resposta">
+        <p>O Saldo atual é -> 500</p><br>
+        <p>O Saldo atual é -> 400</p><br>
+        <p>O Saldo atual é -> 2000</p><br>
+        <p>O Saldo atual é -> 0</p><br>   
+    </div>
+    <h5>Incremento.</h5>
+    <p>O operador de adiciona 1 a sua variável. Se usado como prefixado (++a), retorna o valor da variável após a adição. se usado pósfixado, retorna o valor da variavel antes da adição.</p><br>
+    <div class="exemplo">
+        <p>Exemplo pósfixado.</p><br>
+        <p>var a = 8;</p><br>
+        <p>var b = 0;</p><br>
+        <p>b = a++;</p><br>
+        <p>console.log(b);</p><br>
+    </div>
+    <p class="resposta">8</p>
+    <div class="exemplo">    
+        <p>Exemplo prefixado.</p><br>
+        <p>var a = 8;</p><br>
+        <p>var b = 0;</p><br>
+        <p>b = ++a;</p><br>
+        <p>console.log(b);</p><br>
+    </div>
+    <p class="resposta">9</p><br>
+    <p class="atencao">Além do encremeto, temos também o de decremento (a--) que subtrai 1 da variável. Sua sintaxe é a mesma do encremento só que subtrai em vêz de adicionar.</p>
+    <h5>Exponencial.</h5>
+    <p>O operador de exponenciação eleva a variável (numerica) a uma potencia.</p><br>
+    <div class="exemplo">
+        <p>var quadrado = 8 ** 2;</p><br>
+        <p>console.log(quadrado);</p><br>
+    </div>
+        <p class="resposta">64</p><br>
+    <div class="dica">
+        <p>Só para não ter dúvidas:</p><br>
+        <p>Os operadores que estudamos até agora são ( +, -, *, /, % e ** ).</p><br>
+        <p>O sinal de igualdade ( = ) serve para atribuir a operação a própria variável -> a += 1 vai ser o mesmo que -> a = a + 1.</p><br>
+    </div>
+
+    <h3>Operadores de comparação.</h3>
+    <p>A tabela abaixo descreve o que cada operador de comparação faz.</p><br>
+    <div class="container-fluid">
+        <div class="row titulo">
+            <div class="col-1"><b>Op.</b></div>
+            <div class="col-9"><b>Descrição</b></div>
+            <div class="col2"><b>Exemplo</b></div>
+        </div>
+        <div class="row linha">
+            <div class="col-1">==</div>
+            <div class="col-9">Igual retorna verdadeiro se os operandos forem iguais.</div>
+            <div class="col-2">5 == "5"</div>
+        </div>
+        <div class="row linha1">
+            <div class="col-1">!=</div>
+            <div class="col-9">Diferente retorna verdadeiro caso os operandos não sejam iguais</div>
+            <div class="col-2">5 != "3"</div>
+        </div>
+        <div class="row linha">
+            <div class="col-1">===</div>
+            <div class="col-9">Estritamente igual retorna verdadeiro se os operandos e tipos forem iguais.</div>
+            <div class="col-2">5 === 5</div>
+        </div>
+        <div class="row linha1">
+            <div class="col-1">!==</div>
+            <div class="col-9">Estritamente diferente retorna verdadeiro caso os operandos não sejam iguais e/ou do mesmo tipo.</div>
+            <div class="col-2">5 !== "5"</div>
+        </div>
+        <div class="row linha">
+            <div class="col-1">></div>
+            <div class="col-9">Maior que retorna verdadeiro caso o operador da esquerda seja Maior que o da direita.</div>
+            <div class="col-2">6 > 5</div>
+        </div>
+        <div class="row linha1">
+            <div class="col-1"> >= </div>
+            <div class="col-9">Maior ou Igual retorna verdadeiro se o operando da esquerda for maior ou igual o operando da direita.</div>
+            <div class="col-2">5 >= 5</div>
+        </div>
+        <div class="row linha">
+            <div class="col-1">&lt;</div>
+            <div class="col-9">Menor retorna verdadeiro se o operando da esquerda for menor que o operando da direita.</div>
+            <div class="col-2">4 &lt; 5</div>
+        </div>
+        <div class="row linha1">
+            <div class="col-1">&lt;=</div>
+            <div class="col-9">Memor ou Igual retorna verdadeiro se o operando da esquerda for menor ou igual ao operando da direita.</div>
+            <div class="col-2">5 &lt;= "5"</div>
+        </div>
+        <div class="atencao">
+            <p><b>=></b> não é operador, mas uma anotação para função de seta.</p><br>
+            <p><b>=&lt</b> nunca vi nem ouvi falar. ( isso pode causar um erro no seu código).</p><br>
+        </div>
+    </div>
+    <h3>Operadores lógicos.</h3>
+    <p>Antes de terminar a primeira fase de operadores, vamos dar uma olhada nos operadores lógicos.</p>
+    <div class="container-fluid">
+        <div class="row titulo">
+            <div class="col-1"><b>Op.</b></div>
+            <div class="col-11"><b>Descrição</b></div>
+        </div>
+        <div class="row linha">
+            <div class="col-1">&&</div>
+            <div class="col-11"><b>E logico</b> - retorna verdadeiro se todos os operandos sejam verdadeiro.</div>
+        </div>
+        <div class="row linha1">
+            <div class="col-1">||</div>
+            <div class="col-11"><b>OU lógico</b> - retorna verdadeiro se um dos operandos forem verdadeiro.</div>
+        </div>
+        <div class="row linha">
+            <div class="col-1">!</div>
+            <div class="col-11"><b>Não lógico</b> - nega a condição.</div>
+        </div>
+    </div> 
+    <p>Daremos mais explicações sobre como funciona esses operadores nos próximos caípulos, mas, por enquanto só precisamos saber que esses operadores servem para retornar um valor lógico (true ou false) para condições imposta no código que você escreve.</p>   
+<br><br><br><br>
+</body>
+</html>
